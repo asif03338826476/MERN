@@ -1,0 +1,28 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asif03338826476/MERN.git"
+  },
+  "author": "Asif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asif03338826476/MERN/issues"
+  },
+  "homepage": "https://github.com/asif03338826476/MERN#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.20"
+  }
+}
