@@ -1,17 +1,15 @@
 const getGoals = (req, res) => {
-  try {
-    res.status(200).json({ message: "Get Goals" });
-  } catch {
-    res.status(500).send("something vich");
-  }
+  res.status(200).json({ message: "Get Goals" });
 };
+
 const setGoals = (req, res) => {
-  try {
-    res.status(200).json({ message: "Set Goals" });
-  } catch {
-    res.status(500).send("something vich");
+  if (!req.body.text) {
+    res.status(400);
+    throw new Error("Please add text field");
   }
+  res.status(200).send(req.body.text);
 };
+
 const updateGoals = (req, res) => {
   try {
     res.status(200).json({ message: `Goal at ${req.params.id} updated` });
